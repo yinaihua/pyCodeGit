@@ -9,13 +9,7 @@ def func(x):
     return np.array(x>0,dtype=np.int)
 
 x=np.arange(-5.0,5.0,0.1)
-y=func(x)
-
-plt.plot(x,y)
-plt.ylim(-0.1,1.1)
-plt.show()
-print("测试")
-#远端修改
+#都是符合dec
 #远端更新一个方法
 import math
 pi=math.pi
