@@ -1,7 +1,7 @@
 print("hello")
 print("我是新分支")
 
-print("再试试")
+print("再")
 import numpy as np
 import matplotlib.pylab as plt
 
