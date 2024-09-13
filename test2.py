@@ -10,3 +10,4 @@ y=func1(x)
 
 plt.plot(x,y)
 plt.show()
+#远端修改
