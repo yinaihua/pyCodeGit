@@ -1,12 +1,6 @@
 print("hello")
 print("我是新分支")
 
-print("再试试本地修改")
-import numpy as np
-import matplotlib.pylab as plt
-
-def func(x):
-    return np.array(x>0,dtype=np.int)
 
 x=np.arange(-5.0,5.0,0.1)
 #都是符合dec
