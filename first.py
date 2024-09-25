@@ -1,16 +1,20 @@
-print("hello")
-print("我是新分支")
+import torch
+import torch.nn.functional as F
 
 
-x=np.arange(-5.0,5.0,0.1)
-#都是符合dec
-#远端更新一个方法
-import math
-pi=math.pi
+input=torch.tensor([[1,2,0,3,1],
+                    [0,1,2,3,1],
+                    [1,2,1,0,0],
+                    [5,2,3,1,1],
+                    [2,1,0,1,1]])
+kernel=torch.tensor([[1,2,1],
+                     [0,1,0],
+                     [2,1,0]])
 
-def circle_area():
-    r=float(input('请输入半径：'))
-    s=pi*r*r
-    print('圆面积为：{:.2f}'.format(s))
-    
-circle_area()
+input=torch.reshape(input,(1,1,5,5))
+kernel=torch.reshape(kernel,(1,1,3,3))
+
+output=F.conv2d(input,kernel,stride=1)  #二维卷积 
+
+print(output)
+
