@@ -18,5 +18,4 @@ output=F.conv2d(input,kernel,stride=1)  #二维卷积
 
 print(output)
 
-更新
-dfsg 
+
