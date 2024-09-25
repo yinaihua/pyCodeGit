@@ -20,4 +20,3 @@ print(output)
 
 更新
 dfsg 
-二负i给一部分
